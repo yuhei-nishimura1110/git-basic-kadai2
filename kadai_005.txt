@@ -1,0 +1,77 @@
+PS C:\Users\yuhei\a> cd c:\Users\yuhei
+PS C:\Users\yuhei> git init git_challenge
+Initialized empty Git repository in C:/Users/yuhei/git_challenge/.git/
+PS C:\Users\yuhei> cd git_challenge
+PS C:\Users\yuhei\git_challenge> cd C:\Users\yuhei\a      
+PS C:\Users\yuhei\a> git init git_challenge
+Initialized empty Git repository in C:/Users/yuhei/a/git_challenge/.git/
+PS C:\Users\yuhei\a> ved
+ved : 用語 'ved' は、コマンドレット、関数、スクリプト ファイル、または操作可能なプログラムの名前として認
+識されません。名前が正しく記述されていることを確認し、パスが含まれている場合はそのパスが正しいことを確認
+してから、再試行してください。
+発生場所 行:1 文字:1
++ ved
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (ved:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\yuhei\a> 
+PS C:\Users\yuhei\a> cd git_charenge
+cd : パス 'C:\Users\yuhei\a\git_charenge' が存在しないため検出できません。
+発生場所 行:1 文字:1
++ cd git_charenge
++ ~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\yuhei\a\git_charenge:String) [Set-Location], Ite  
+   mNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\yuhei\a> cd git_challenge
+PS C:\Users\yuhei\a\git_challenge> git add hello_world2.txt
+PS C:\Users\yuhei\a\git_challenge> git commmit -m "入力"
+git: 'commmit' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit
+PS C:\Users\yuhei\a\git_challenge> git commit -m "入力"
+On branch main
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        a.code-workspace
+        hello_world.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\yuhei\a\git_challenge> add hello_world2.txt
+add : 用語 'add' は、コマンドレット、関数、スクリプト ファイル、または操作可能なプログラムの名前として認
+識されません。名前が正しく記述されていることを確認し、パスが含まれている場合はそのパスが正しいことを確認  
+してから、再試行してください。
+発生場所 行:1 文字:1
++ add hello_world2.txt
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (add:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\yuhei\a\git_challenge> git add hello_world2.txt
+PS C:\Users\yuhei\a\git_challenge> git commit -m "入力"
+[main (root-commit) 812dad2] 蜈･蜉
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello_world2.txt
+PS C:\Users\yuhei\a\git_challenge> git add hello_world2.txt
+PS C:\Users\yuhei\a\git_challenge> git commit -m "日本語訳の追記"
+[main e2a07b1] 譌･譛ｬ隱櫁ｨｳ縺ｮ霑ｽ險
+ 1 file changed, 1 insertion(+)
+PS C:\Users\yuhei\a\git_challenge> git log
+commit e2a07b1e6c40c4a89b25b0d051c7edfa397bd813 (HEAD -> main)
+Author: yuhei.nishimura.2005 <yuhei.nishimura,2005@gmail.com>
+Date:   Sun May 5 15:39:13 2024 +0900
+
+    日本語訳の追記
+
+commit 812dad29d2b957871ec57d756b5d36b34f7efac6
+Author: yuhei.nishimura.2005 <yuhei.nishimura,2005@gmail.com>
+Date:   Sun May 5 15:38:13 2024 +0900
+
+    入力
+:
